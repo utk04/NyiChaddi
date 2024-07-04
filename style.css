@@ -1,0 +1,303 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* background-color: rgb(239, 239, 209); */
+
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    background: linear-gradient(to right, rgb(104, 104, 165), rgb(38, 38, 129));
+    height: 100px;
+}
+
+.logo {
+    margin: 0px;
+}
+
+.logo img {
+    height: 10rem;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.navmid{
+    margin-left: 5px;
+    padding: 10px;
+}
+
+.navmid ul{
+    display: flex;
+    list-style-type: none;
+
+}
+.search{
+
+    display: flex;
+    /* align-self: flex-end; */
+    align-items: end;
+    justify-content: flex-end;
+    flex: 1;
+    margin-right: 20px;
+    padding-right: 10px;
+
+}
+.searches{
+    display: flex;
+padding-left: 5px;
+align-items: flex-end;
+align-self: flex-end;
+}
+
+ul li a {
+    display: block;
+    margin: 5px;
+    list-style-type: none;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+
+ul li a:hover {
+    color: black;
+    background-color: antiquewhite;
+
+}
+
+#c {
+    position: relative;
+    /* Set the position to relative for positioning the text */
+    width: 100%;
+    height: 500px;
+    background-image: url('underwear.jpg');
+    /* Set the background image */
+    background-size: cover;
+    /* Adjust to cover the entire container */
+    background-position: center;
+    /* Center the background image */
+    color: white;
+    /* Text color on the image */
+    text-align: center;
+}
+
+#c p {
+    position: absolute;
+    /* Position the text absolutely within the container */
+    top: 50%;
+    /* Center the text vertically */
+    left: 50%;
+    /* Center the text horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust to center the text precisely */
+    font-size: 44px;
+    /* Adjust the font size as needed */
+    /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background for better readability */
+    padding: 10px;
+    /* Adjust padding as needed */
+    color: rgb(13, 90, 29);
+    border: 1px solid black;
+    background-color: rgb(224, 224, 223);
+    opacity: 0.4;
+}
+
+        /* Line styles */
+        .line {
+        width: 0px;
+        height: 5px;
+        background-color: red;
+        position: absolute;
+        top: 62%;
+        left: 25%;
+        animation: moveLine 2s linear infinite; /* Keyframe animation */
+    }
+    .line2 {
+        width: 0px;
+        height: 5px;
+        background-color: red;
+        position: absolute;
+        top: 38%;
+        left: 25%;
+        animation: moveLine 2s linear infinite; /* Keyframe animation */
+    }
+    .line3 {
+        width: 5px;
+        height: 0%;
+        background-color: red;
+        position: absolute;
+        top:  38%;
+        left: 25%;
+        animation: moveLines 2s linear infinite; /* Keyframe animation */
+    }
+    .line4 {
+        width: 5px;
+        height: 0%;
+        background-color: red;
+        position: absolute;
+        top: 38%;
+        left: 74.5%;
+        animation: moveLines 2s linear infinite; /* Keyframe animation */
+    }
+
+    /* Keyframe animation */
+    @keyframes moveLine {
+        0% {
+            width: 0%;
+
+        }
+        100%{
+            width: 50%;
+        }
+    }
+    @keyframes moveLines {
+        0% {
+            height: 0%;
+
+        }
+        100%{
+            height: 25%;
+        }
+    }
+
+    /* 740 pixels tk theek hai uske baad media query lgana hai  */
+
+
+.dis p {
+    padding: 20px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: rgba(161, 158, 158, 0.468);
+    font-family: 'rubik bubbles', sans-serif;
+    font-size: 30px;
+}
+
+/* @keyframes popUp { */
+    /* 0% { */
+        /* transform: scale(0); */
+        /* opacity: 0; */
+    /* } */
+
+    /* 100% { */
+        /* transform: scale(1); */
+        /* opacity: 1; */
+    /* } */
+/* } */
+
+#c img {
+    height: 150px;
+    width: 20%;
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.final {
+    display: flex;
+    margin: 10px 20px;
+}
+.mission{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(228, 216, 216);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px 4px grey;
+}
+.mis1{
+    margin-top: 20px;
+    width: 48%;
+    display: inline-block;
+    height: 300px;
+    border: 2px solid black;
+    justify-content: space-between;
+    margin: 10px;
+}
+.mis1 p{
+    margin: 10px 15px;
+    padding: 10px 30px;
+    justify-content: space-evenly;
+}
+.final {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 155px;
+    margin-top: 20px;
+}
+.final div img{
+    margin: 10px 10x;
+    padding: 10px 10px;
+    width: 100%;
+    height: 30rem;
+    border: 2px solid grey;
+    box-shadow: 1px 1px 4px 4px grey;
+    filter: grayscale(40%) contrast(80%) brightness(80%);
+}
+.final div img:hover{
+    filter: none;
+    transition: all;
+    animation-duration: 200ms;
+}
+
+.btn{
+    height: 50px;
+    width: 100px;
+    position: relative;
+    top: -80px;
+    left: 20px;
+    background-color: rgba(84, 227, 179, 0); 
+    opacity: 0.4;
+    border: 4px solid black;
+    border-radius: 8px;
+    box-shadow: 5px;
+}
+.btn:hover{
+    height: 60px;
+    width: 120px;
+    background-color: aliceblue;
+}
+.btn a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.btn a:hover{
+    color:red;
+}
+#btns a:hover{
+    color:red
+}
+/* #navbar p{
+    position: relative;
+    left: 200px;
+    font-size: 30px;
+    top: -25px;
+    color: black;
+    font-family: 'kalnia';
+}
+.search{
+    position: relative;
+    top: 20px;
+
+} */
+.searchbox{
+    position: relative;
+    left: 100px;
+    top: -10px;
+    
+}
+.searchbox p{
+    font-size: 25px;
+    font-family: 'kalnia';
+    padding-bottom: 3px;
+    color: bisque;
+}
+.search{
+    padding-top: 5px;
+    color: bisque;
+}
